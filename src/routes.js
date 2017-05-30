@@ -19,6 +19,10 @@ export default [
       path: '/profile/',
       component: require('./pages/profile.vue')
   },
+  {
+      path: '/diamond/',//红钻
+      component: require('./pages/red_diamond.vue')
+  },
 //   {
 //       path: '/dynamic-route/blog/:blogId/post/:postId/',
 //       component: require('./pages/dynamic-route.vue')

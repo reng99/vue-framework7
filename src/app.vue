@@ -9,15 +9,11 @@
             <game v-if="activeToolBar==2"></game>
             <televiseLive v-if="activeToolBar==3"></televiseLive>
             <profile v-if="activeToolBar==4"></profile>
+            <f7-list>
+            <f7-list-item title="我的红钻" link="/diamond/"></f7-list-item>
+        </f7-list>
             <!--工具栏固定-->
-            <f7-toolbar>
-              <template  v-for="(item,index) in toolBar">
-                <f7-link :class="{'active':item.id==activeToolBar}" @click="changeActiveToolBar(index)">
-                  <i class="f7-icons">{{item.name}}</i>
-                  <span>{{item.title}}</span>
-                </f7-link>
-              </template>
-            </f7-toolbar>
+            <toolbar v-on:toolbarToIndex="addContent"></toolbar>
           </f7-page>
         </f7-pages>
       </f7-view>
@@ -30,37 +26,13 @@ import tradeUnion from './pages/trade_union.vue'
 import game from './pages/game.vue'
 import televiseLive from './pages/televise_live.vue'
 import profile from './pages/profile.vue'
+
+//引入工具栏
+import toolbar from './pages/toolbar.vue'
 export default {
   data(){
     return{
-      toolBar:[
-        {
-          id:0,
-          name:'email_fill',
-          title:'消息'
-        },
-        {
-          id:1,
-          name:'persons_fill',
-          title:'工会'
-        },
-        {
-          id:2,
-          name:'world_fill',
-          title:'游戏'
-        },
-        {
-          id:3,
-          name:'videocam_round_fill',
-          title:'直播'
-        },
-        {
-          id:4,
-          name:'person_fill',
-          title:'我'
-        }
-    ],
-    activeToolBar:0,//活跃的工具栏目
+      activeToolBar:0,//当前的工具栏，默认是0-->消息
     }
   },
   components:{
@@ -68,10 +40,12 @@ export default {
     tradeUnion,
     game,
     televiseLive,
-    profile
+    profile,
+    toolbar
   },
   methods:{
-    changeActiveToolBar(index){
+    //从子组将toolbar中传递参数过来
+    addContent(index){
       let vm = this;
       vm.activeToolBar = index;
     }
@@ -80,40 +54,6 @@ export default {
 </script>
 <style lang="less" scoped>
   #app{
-    .toolbar{
-      display: -webkit-flex;
-      display:-moz-flex;
-      display:-ms-flex;
-      display:flex;
-      flex-direction:row;
-      .toolbar-inner{
-        padding:0;
-        .link{
-          display: -webkit-flex;
-          display:-moz-flex;
-          display:-ms-flex;
-          display:flex;
-          flex-direction:column;
-          color:#666;
-          font-size:12px;
-          flex:1;
-          i{
-            display:block;
-            width:14px;
-            height:14px;
-            margin-top:4px;
-          }
-          span{
-            margin-top:-4px;
-            display:block;
-            height:12px;
-            padding:0;
-          }
-          &.active{
-            color:blue;
-          }
-        }
-      }
-    }
+
   }
 </style>
