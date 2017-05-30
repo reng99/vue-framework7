@@ -2,8 +2,7 @@
     <f7-views main id="app">
       <f7-view>
         <f7-pages>
-          <f7-page nav-fixed><!--工具栏和导航栏固定-->
-            <f7-navbar title="my app" v-if="activeToolBar==4"></f7-navbar>
+          <f7-page>
             <!--组件的按需求引用-->
             <message v-if="activeToolBar==0"></message>
             <tradeUnion v-if="activeToolBar==1"></tradeUnion>
