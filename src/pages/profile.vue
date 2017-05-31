@@ -1,7 +1,7 @@
 <template>
     <div id="profile">
         <f7-list>
-            <f7-list-item title="我的红钻"></f7-list-item>
+            <f7-list-item title="我的红钻" link="/profile/diamond/"></f7-list-item>
         </f7-list>
     </div>
 </template>

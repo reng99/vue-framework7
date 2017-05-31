@@ -1,7 +1,11 @@
 
 <template>
   <f7-page>
-    <f7-navbar title="About" back-link="Back" sliding></f7-navbar>
+    <f7-navbar title="我的红钻" back-link="返回" sliding>
+        <f7-nav-right>
+          <f7-link href="/diamond/record/">兑换记录</f7-link><!--这里的f7-link转换成a标签，带有link类名。这里添加跳转的话不能使用link="/path/to/component／的方法，直接加上href="/path/to/component/""-->
+        </f7-nav-right>
+    </f7-navbar>
     <f7-block inner>
       <p>Here is About page!</p>
       <p>You can go <f7-link back>back</f7-link>.</p>

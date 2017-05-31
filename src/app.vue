@@ -9,9 +9,6 @@
             <game v-if="activeToolBar==2"></game>
             <televiseLive v-if="activeToolBar==3"></televiseLive>
             <profile v-if="activeToolBar==4"></profile>
-            <f7-list>
-            <f7-list-item title="我的红钻" link="/diamond/"></f7-list-item>
-        </f7-list>
             <!--工具栏固定-->
             <toolbar v-on:toolbarToIndex="addContent"></toolbar>
           </f7-page>

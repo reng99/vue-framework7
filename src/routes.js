@@ -20,9 +20,13 @@ export default [
       component: require('./pages/profile.vue')
   },
   {
-      path: '/diamond/',//红钻
-      component: require('./pages/red_diamond.vue')
+      path: '/profile/diamond/',//红钻
+      component: require('./pages/profile/red_diamond.vue')
   },
+  {
+      path:"/diamond/record/",//红钻的兑换记录页面
+      component:require("./pages/profile/diamond/exchange-record-page.vue")
+  }
 //   {
 //       path: '/dynamic-route/blog/:blogId/post/:postId/',
 //       component: require('./pages/dynamic-route.vue')
