@@ -15,6 +15,7 @@
 </template>
 
 <script>
+
 export default {
     data(){
         return {
@@ -26,6 +27,8 @@ export default {
             ]
         }
     },
+    mounted(){
+    }
 }
 </script>
 <style lang="less" scoped>

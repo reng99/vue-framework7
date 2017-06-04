@@ -30,3 +30,5 @@ npm run build
 - webpack
 
 - framework7-icons(图标)
+
+- [underscore](http://www.css88.com/doc/underscore/)js实用库

@@ -30,6 +30,10 @@ Vue.use(Framework7Vue)
 //公共函数库--过滤函数
 import "./api/filter.js"
 
+
+//js实用库--underscore-->webpack中（webpack.base.config.js中的plugin里面引用）
+
+
 // Init App
 new Vue({
   el: '#app',
