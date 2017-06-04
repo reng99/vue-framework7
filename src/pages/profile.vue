@@ -21,6 +21,7 @@
     #profile{
         .list-block{
             margin:0;
+            margin-top:-44px;
         }
     }
 </style>
