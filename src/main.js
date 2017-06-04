@@ -27,6 +27,9 @@ import App from './app'
 // Init F7 Vue Plugin
 Vue.use(Framework7Vue)
 
+//公共函数库--过滤函数
+import "./api/filter.js"
+
 // Init App
 new Vue({
   el: '#app',
