@@ -23,7 +23,16 @@ export default {
                 {type:0,time:"2017-06-03",amount:"100"},
                 {type:1,time:"2017-06-03",amount:"300"},
                 {type:0,time:"2017-06-03",amount:"1000"},
-                {type:2,time:"2017-06-03",amount:"1000"}
+                {type:2,time:"2017-06-03",amount:"1000"},
+                {type:0,time:"2017-06-03",amount:"100"},
+                {type:1,time:"2017-06-03",amount:"300"},
+                {type:0,time:"2017-06-03",amount:"100"},
+                {type:1,time:"2017-06-03",amount:"300"},
+                {type:0,time:"2017-06-03",amount:"1000"},
+                {type:1,time:"2017-06-03",amount:"300"},
+                {type:0,time:"2017-06-03",amount:"100"},
+                {type:1,time:"2017-06-03",amount:"300"},
+                {type:0,time:"2017-06-03",amount:"1000"},
             ]
         }
     },
@@ -33,15 +42,28 @@ export default {
 </script>
 <style lang="less" scoped>
     @import "../../../css/common.less";
+    #app #exchange-record-page .page-content{
+        margin-top:100px;
+    }
     #exchange-record-page{
         .list-block{
             margin:0;
+            padding-top:-44px;
+            margin-bottom:-44px;
             .item-title{
                 p{
                     margin:0;
-                    font-size:22px;
-                    color:@color_test;
+                    font-size:18px;
+                    color:@color_33;
                 }
+                time{
+                    color:@color_c7;
+                    font-size:12px;
+                }
+            }
+            .item-after{
+                color:@color_00;
+                font-size:26px;
             }
         }
     }

@@ -11,11 +11,12 @@ import Vue from 'vue';
  */
 
 Vue.filter("exchangeType",(type)=>{
-    if(!type){
-        return "其他方式兑换";
-    }
-    let types = [//可以扩展
+    let typeList = [//可以扩展
         {type:0,name:"积分兑换"},
         {type:1,name:"某豆兑换"}
     ];
+    let filterType = _.filter(typeList,function(obj){//使用到underscore.js
+        return obj.type == type;
+    });
+    return filterType[0]?filterType[0].name : "其他兑换方式";
 })

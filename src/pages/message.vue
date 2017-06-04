@@ -1,7 +1,7 @@
 <template>
     <div id="message">
             <div style="background:red;width:100%;height:2000px;position:relative;">
-            // <h1 style="position:absolute;bottom:0;">rengjia</h1>
+                <h1 style="position:absolute;bottom:0;">rengjia</h1>
             </div>
         
     </div>

@@ -4,8 +4,9 @@ Your custom styles go here
 //这里写入的是全局的样式的控制
 
  ========= */
+
 .page-content{
-  padding-top:44px;;
+  padding-top:44px;
   padding-bottom:44px;
 }
 
