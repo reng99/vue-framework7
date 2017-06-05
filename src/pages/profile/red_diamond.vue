@@ -21,14 +21,17 @@
     <div class="middle">
       <f7-list>
         <f7-list-item class="item-link">
-          <div class="item-title">我的某豆<b>6000</b></div>
-          <div class="item-after">充值某豆</div>
+          <div class="item-title">我的某豆<b class="beans">6000</b></div>
+          <div class="item-after"><span class="beans">充值某豆</span></div>
         </f7-list-item>
       </f7-list>
       <f7-list>
         <f7-list-item v-for="(item , key) in myBeans" :key="key">
-          <div class="item-title">{{item.amount}}</div>
-          <div class="item-after">{{item.amount}}某豆</div>
+          <div class="item-title">
+            <img src="../../images/profile/diamond/red_diamond.jpg" alt="red_diamond_img"> 
+            <span>{{item.amount}}</span><span v-if="key==0" class="bean_specially">（首充奖励+1000积分）</span>
+          </div>
+          <div class="item-after" @click="convertDiamond(item.amount)"><a href="#">{{item.amount}}某豆</a></div>
         </f7-list-item>
       </f7-list>
       <f7-list>
@@ -46,6 +49,7 @@
 export default {
     data(){
         return {
+          //red_diamond_img_path:"/src/images/profile/diamond/red_diamond.jpg",图片的路径，需要修改
           myBeans:[//模拟数据
             {amount:600},
             {amount:5000},
@@ -56,8 +60,10 @@ export default {
         }
     },
     methods:{
-      //联系客服调用的接口位置
-      contactServer(){
+      convertDiamond(num){//某豆转换成红钻
+        console.log(num);
+      },
+      contactServer(){//联系客服调用的接口位置
         console.log('联系客服');
       }
     }
@@ -68,6 +74,42 @@ export default {
    #red_diamond{
       .list-block{
         margin:0;
+        .item-title{
+          display:flex;
+          justify-content:column;
+          img{
+            display:block;
+            width:24px;
+            height:24px;
+            margin-right:3px;
+          }
+          .bean_specially{
+            color:@color_red;
+          }
+          b{
+            margin-left:10px;
+            font-weight:normal;
+          }
+          .beans{
+            color:@color_yellow;
+          }
+        }
+        .item-after{
+          font-size:13px;
+          a{
+            color:@color_white;
+            background:@color_yellow;
+            display:block;
+            width:80px;
+            text-align:center;
+            height:28px;
+            line-height:28px;
+            border-radius:5px;
+          }
+          .beans{
+            color:@color_yellow;
+          }
+        }
       }
       .top{
         width:100%;
