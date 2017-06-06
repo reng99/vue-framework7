@@ -22,7 +22,7 @@
       <f7-list>
         <f7-list-item class="item-link">
           <div class="item-title">我的某豆<b class="beans">6000</b></div>
-          <div class="item-after"><span class="beans">充值某豆</span></div>
+          <div class="item-after" @click="rechargeApi"><span class="beans">充值某豆</span></div>
         </f7-list-item>
       </f7-list>
       <f7-list>
@@ -65,6 +65,9 @@ export default {
       },
       contactServer(){//联系客服调用的接口位置
         console.log('联系客服');
+      },
+      rechargeApi(){//调用充值某豆的api
+        console.log("调用充值某豆的api");
       }
     }
 }
