@@ -21,18 +21,18 @@ npm run build
 
 ## 使用技术栈
 
-- [framwork7](http://framework7.cn/Index/get_started.html)完美的HTML框架
+- [framwork7](http://framework7.cn/Index/get_started.html) 完美的HTML框架
 
-- vue
+- [vue](https://cn.vuejs.org/) 渐进式javascript框架
 
-- less
+- [less](http://lesscss.cn/) 一门css预处理器语言
 
-- webpack
+- [webpack](http://webpack.github.io/) 模块加载器兼打包工具
 
-- framework7-icons(图标)
+- [framework7-icons](http://icons.framework7.cn/) framework7 自带图标
 
-- [underscore](http://www.css88.com/doc/underscore/)js实用库
+- [underscore](http://www.css88.com/doc/underscore/) javascript实用库
 
 - [weinre远程web检查器 ](https://github.com/reng99/weinre) Web Inspector Remote
 
-> 简单介绍通过node使用--1.(sudo)npm install -g weinre  2.weinre --boundHost -all- (默认是8080端口，注意项目的端口不能够是8080) 3.引入相应的javascript代码标签到html页面中  [详细](https://github.com/reng99/weinre)
+> 简单介绍通过node使用weinre--1.(sudo)npm install -g weinre  2.weinre --boundHost -all- (默认是8080端口，注意项目的端口不能够是8080) 3.引入相应的javascript代码标签到html页面中  [详细](https://github.com/reng99/weinre)
