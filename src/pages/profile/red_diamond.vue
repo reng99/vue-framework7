@@ -61,7 +61,25 @@ export default {
     },
     methods:{
       convertDiamond(num){//某豆转换成红钻
-        console.log(num);
+      var myApp = new Framework7();
+        //console.log(num);
+        myApp.modal({
+          title:"",
+          text:"确定兑换"+num+"红钻，供消耗"+num+"某豆",
+          buttons:[
+            {
+              text:"取消",
+              close:true,
+              onClick:function(){}
+            },
+            {
+              text:"确定",
+              onClick:function(){
+                console.log("确定");
+              }
+            }
+          ]
+        })
       },
       contactServer(){//联系客服调用的接口位置
         console.log('联系客服');
