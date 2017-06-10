@@ -28,7 +28,7 @@
       <f7-list>
         <f7-list-item v-for="(item , key) in myBeans" :key="key">
           <div class="item-title">
-            <img src="../../images/profile/diamond/red_diamond.jpg" alt="red_diamond_img"> 
+            <img src="../../images/profile/profile_red_diamond.jpg" alt="red_diamond_img"> 
             <span>{{item.amount}}</span><span v-if="key==0" class="bean_specially">（首充奖励+1000积分）</span>
           </div>
           <div class="item-after" @click="convertDiamond(item.amount)"><a href="#">{{item.amount}}某豆</a></div>
