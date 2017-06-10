@@ -1,5 +1,18 @@
 <template>
     <div id="profile">
+        <!--个人信息-->
+        <f7-list class="block0">
+            <f7-list-item class="item-link" @click="toProfile()">
+                <div class="item-title">
+                    <img src="../images/profile/profile_img.jpeg" alt="profile_img" class="profile">
+                    <div class="account">
+                        <h3>Reng Jia</h3>
+                        <p>账号：{{account}}</p>
+                    </div>
+                </div>
+                
+            </f7-list-item>
+        </f7-list>
         <f7-list class="block1">
             <f7-list-item link="/profile/diamond/">
                 <div class="item-title">
@@ -62,15 +75,18 @@
     export default {
         data(){
             return{
-
+                account:"1234567"
             }
         },
         methods:{
-
+            toProfile(){
+                console.log("跳转到个人页面");
+            }
         }
     }
 </script>
 <style lang="less" scoped>
+   @import "../css/common.less";
     #profile{
         margin-top:-44px;
         .list-block{
@@ -95,6 +111,39 @@
             .item-after{
                 font-size:13px;
             }
+        }
+        .block0{
+            .item-title{
+                .profile{
+                    width:64px;
+                    height:64px;
+                    margin-right:10px;
+                    border-radius:6px;
+                }
+                .account{
+                    margin-top:8px;
+                    h3{
+                        margin:0;
+                    }
+                    p{
+                        font-size:12px;
+                        margin:0;
+                        color:@color_66;
+                    }
+                }
+            }
+            // .item-after{
+            //     display:flex;
+            //     flex-direction:column;
+            //     margin:0;
+            //     margin-right:100px;
+            //     text-align:left;
+            //     p{
+            //         flex:1;
+            //         margin:0;
+            //     }
+            // }
+
         }
     }
 </style>

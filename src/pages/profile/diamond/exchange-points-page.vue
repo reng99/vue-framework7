@@ -15,6 +15,7 @@
             </div>
         </f7-list-item>
     </f7-list>
+    <!--<a href="#" class="button active" @click="commit()" disabled>兑换红钻</a>-->
     <a href="#" class="button active" @click="commit()">兑换红钻</a>
   </f7-page>
 </template>
