@@ -12,7 +12,7 @@
         <strong>2480</strong>
       </div>
       <f7-list>
-        <f7-list-item class="item-link">
+        <f7-list-item link="/diamond/points/">
           <div class="item-title">我的积分<b>1500</b></div>
           <div class="item-after">兑换红钻</div>
         </f7-list-item>

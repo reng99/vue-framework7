@@ -10,7 +10,7 @@
                     10910红钻／193200积分
                 </div>
             </f7-list-item>
-            <f7-list-item link="/diamond/points/">
+            <f7-list-item class="item-link">
                 <div class="item-title">
                     <img src="../images/profile/profile_bean.png" alt="beans_img"> 
                     <span>我的某豆</span>
@@ -19,7 +19,7 @@
                     2000某豆
                 </div>
             </f7-list-item>
-            <f7-list-item class="item-link">
+            <f7-list-item link="/diamond/points/">
                 <div class="item-title">
                     <img src="../images/profile/profile_points.png" alt="points_img"> 
                     <span>我的积分</span>
@@ -30,7 +30,7 @@
             </f7-list-item>
         </f7-list>
         <f7-list class="block3">
-            <f7-list-item link="/profile/diamond/">
+            <f7-list-item class="item-link">
                 <div class="item-title">
                     <img src="../images/profile/profile_download.png" alt="domnload_img"> 
                     <span>我的下载</span>
