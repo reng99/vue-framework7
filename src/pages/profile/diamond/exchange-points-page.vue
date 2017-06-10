@@ -3,7 +3,7 @@
 </template>
 <script>
     export default{
-        name:exchange-points-page,
+        name:"exchange-points-page",
         data(){
             return{
 
@@ -15,7 +15,7 @@
     }
 </script>
 <style lang="less" scoped>
-    @import "../../../../css/common.less";
+    @import "../../../css/common.less";
     #exchange-points-page{
 
     }

@@ -26,7 +26,11 @@ export default [
   {
       path:"/diamond/record/",//红钻的兑换记录页面
       component:require("./pages/profile/diamond/exchange-record-page.vue")
-  }
+  },
+{
+      path:"/diamond/record/1",//红钻的兑换记录页面
+      component:require("./pages/profile/diamond/exchange-points-page.vue")
+  },
 //   {
 //       path: '/dynamic-route/blog/:blogId/post/:postId/',
 //       component: require('./pages/dynamic-route.vue')
