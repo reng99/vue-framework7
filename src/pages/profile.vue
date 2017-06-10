@@ -10,7 +10,7 @@
                     10910红钻／193200积分
                 </div>
             </f7-list-item>
-            <f7-list-item class="item-link">
+            <f7-list-item link="/diamond/points/">
                 <div class="item-title">
                     <img src="../images/profile/profile_bean.png" alt="beans_img"> 
                     <span>我的某豆</span>
