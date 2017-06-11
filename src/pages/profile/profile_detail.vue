@@ -2,7 +2,7 @@
     <f7-page id="profile_detail">
         <f7-navbar title="个人资料" back-link="返回" sliding></f7-navbar>
         <f7-list>
-            <f7-list-item class="item-link" @click="jumpTo()">
+            <f7-list-item class="item-link" @click="changeProfileImg()">
                 <div class="item-title">
                     <span>头像</span>
                 </div>
@@ -69,8 +69,29 @@ export default{
                 window.event.canselBubble = true;
             }
         },
-        jumpTo(){
-            console.log("跳转模拟框");
+        changeProfileImg(){
+            //更改我的头像avatar
+            var myApp = new Framework7();
+
+            var buttons = [
+                {
+                    text:"拍照",
+                    onClick:function(){
+                        myApp.alert('获取拍照的api进行拍照');
+                    }
+                },
+                {
+                    text:"从手机相册选择",
+                    onClick:function(){
+                        myApp.alert("获取本地相册的api");
+                    }
+                },
+                {
+                    text:"取消",
+                    color:'gray'
+                }
+            ];
+            myApp.actions(buttons);
         }
     }
 }
