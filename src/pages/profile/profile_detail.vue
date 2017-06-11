@@ -11,7 +11,7 @@
                     <img :src="profile_img_path" alt="peofile_img" class="profile_img" @click="checkImg($event)">
                 </div>
             </f7-list-item>
-            <f7-list-item class="item-link">
+            <f7-list-item class="item-link" @click="modifyNickname()">
                 <div class="item-title">
                     <span>昵称</span>
                 </div>
@@ -29,7 +29,7 @@
             </f7-list-item>
         </f7-list>
         <f7-list>
-            <f7-list-item>
+            <f7-list-item class="item-link" @click="modifySex()">
                 <div class="item-title">
                     <span>性别</span>
                 </div>
@@ -37,7 +37,7 @@
                     <span>男</span>
                 </div>
             </f7-list-item>
-            <f7-list-item>
+            <f7-list-item class="item-link" @click="modifySign()">
                 <div class="item-title">
                     <span>个性签名</span>
                 </div>
@@ -86,7 +86,7 @@ export default{
                 window.event.canselBubble = true;
             }
         },
-        changeProfileImg(){
+        changeProfileImg(){//更换头像
             //更改我的头像avatar
             var myApp = new Framework7();
 
@@ -109,6 +109,15 @@ export default{
                 }
             ];
             myApp.actions(buttons);
+        },
+        modifyNickname(){//修改我的昵称
+            console.log("修改昵称");
+        },
+        modifySex(){//修改我的性别
+            console.log("修改性别");
+        },
+        modifySign(){//修改我的个性签名
+            console.log("修改个性签名");
         }
     }
 }
