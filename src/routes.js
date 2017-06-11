@@ -20,6 +20,10 @@ export default [
       component: require('./pages/profile.vue')
   },
   {
+      path:"/profile/detail/",
+      component:require('./pages/profile/profile_detail.vue')
+  },
+  {
       path: '/profile/diamond/',//红钻
       component: require('./pages/profile/red_diamond.vue')
   },

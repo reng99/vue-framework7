@@ -2,7 +2,7 @@
     <div id="profile">
         <!--个人信息-->
         <f7-list class="block0">
-            <f7-list-item class="item-link" @click="toProfile()">
+            <f7-list-item  link="/profile/detail/">
                 <div class="item-title">
                     <img src="../images/profile/profile_img.jpeg" alt="profile_img" class="profile">
                     <div class="account">
@@ -79,9 +79,6 @@
             }
         },
         methods:{
-            toProfile(){
-                console.log("跳转到个人页面");
-            }
         }
     }
 </script>
