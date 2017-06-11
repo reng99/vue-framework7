@@ -57,8 +57,25 @@ export default{
         }
     },
     methods:{
-        checkImg(e){
-            console.log("查看个人的图片");
+        checkImg(e){//后期需要进行更改哦
+            var vm = this;
+
+            var myApp = new Framework7();
+
+            var $$ = Dom7;
+
+            var myPhotoBrowserStandalone = myApp.photoBrowser({
+                 photos:[
+                    "static/img/profile_img.bedfd1f.jpeg"
+                 ]
+             });
+            vm.$nextTick(function(){//隐藏不必要的内容
+                $$(".photo-browser .photo-browser-close-link span").text('返回');
+                $$(".photo-browser  .no-toolbar .toolbar").hide();
+                $$(".photo-browser .navbar .navbar-inner .center").hide();
+             });
+
+            myPhotoBrowserStandalone.open();
 
             //如果提供了事件对象，则这是一个非ie的浏览器
             if(e && e.stopPropagation){
@@ -112,6 +129,7 @@ export default{
                 }
                 .profile_img{
                     display:block;
+                    border-radius:6px;
                     width:64px;
                     height:64px;
                 }
