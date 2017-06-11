@@ -4,7 +4,7 @@
         <f7-list class="block0">
             <f7-list-item  link="/profile/detail/">
                 <div class="item-title">
-                    <img src="../images/profile/profile_img.jpeg" alt="profile_img" class="profile">
+                    <img :src="profile_img_path" alt="profile_img" class="profile">
                     <div class="account">
                         <h3>Reng Jia</h3>
                         <p>账号：{{account}}</p>
@@ -75,7 +75,8 @@
     export default {
         data(){
             return{
-                account:"1234567"
+                account:"1234567",
+                profile_img_path:"static/img/profile_img.bedfd1f.jpeg",
             }
         },
         methods:{
