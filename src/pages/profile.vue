@@ -76,7 +76,7 @@
         data(){
             return{
                 account:"1234567",
-                profile_img_path:"static/img/profile_img.bedfd1f.jpeg",
+                profile_img_path:"static/img/profile_avatar.bedfd1f.jpeg",
             }
         },
         methods:{

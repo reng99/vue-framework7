@@ -53,7 +53,7 @@ export default{
     name:"profile_detail",
     data(){
         return {
-            profile_img_path:"static/img/profile_img.bedfd1f.jpeg",
+            profile_img_path:"static/img/profile_avatar.bedfd1f.jpeg",
         }
     },
     methods:{
