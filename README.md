@@ -11,13 +11,20 @@ A full-featured Framework7 + Vue + Webpack setup with hot-reload & css extractio
 ## 使用方法
 
 ``` bash
-# install dependencies
+
+# 下载本仓库
+$ git clone https://github.com/reng99/vue-framework7.git\
+
+# 进入根目录
+$ cd vue-framework7
+
+# 安装依赖
 npm install
 
-# serve with hot reload at localhost:8080
+# 开发环境 serve with hot reload at localhost:8080
 npm run dev
 
-# build for production with minification
+# 生产环境 build for production with minification
 npm run build
 ```
 
@@ -43,7 +50,13 @@ npm run build
 
 - [weinre远程web检查器 ](https://github.com/reng99/weinre) Web Inspector Remote
 
-> 简单介绍通过node使用weinre--1.(sudo)npm install -g weinre  2.weinre --boundHost -all- (默认是8080端口，注意项目的端口不能够是8080) 3.引入相应的javascript代码标签到html页面中  [详细](https://github.com/reng99/weinre)
+> 简单介绍通过node使用weinre
+
+1.(sudo)npm install -g weinre  
+
+2.weinre --boundHost -all- (默认是8080端口，注意项目的端口不能够是8080) 
+
+3.引入相应的javascript代码标签到html页面中  [详细](https://github.com/reng99/weinre)
 
 > weinre的优缺点
 
@@ -56,7 +69,11 @@ npm run build
 ## 题外话
 
 - 移动端预览psd或者图片（有利于设计人员）--使用airReview（腾讯开发）
+
 1).访问airReview 
+
 2).单击“临时预览”按钮（若是长期预览，输入项目名称单击“确认”按钮）。
+
 3).将psd或者jpg文件拖拽进airReview。
+
 4).用手机扫描二维码。
